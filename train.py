@@ -1,8 +1,9 @@
 import argparse
 import sys
-from src.exp.nb_06 import *
-from src import luke_model, luke_data
-from src.callbacks import AvgStatsMlFlowCallback
+from exp.nb_06 import *
+import luke_model
+import luke_data
+from callbacks import AvgStatsMlFlowCallback
 
 # Command-line arguments
 parser = argparse.ArgumentParser(description='model_lookilooki Example')

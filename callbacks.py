@@ -3,7 +3,7 @@ from typing import Optional
 import mlflow
 from livelossplot import PlotLosses
 
-from src.exp.nb_05b import Callback, AvgStatsCallback, listify
+from exp.nb_05b import Callback, AvgStatsCallback, listify
 
 
 class RecorderMlFlowCallback(Callback):
