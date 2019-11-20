@@ -1,7 +1,6 @@
 from typing import Optional
 
 import mlflow
-from livelossplot import PlotLosses
 
 from exp.nb_05b import Callback, AvgStatsCallback, listify
 
