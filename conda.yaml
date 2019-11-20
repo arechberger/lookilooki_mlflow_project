@@ -1,0 +1,14 @@
+
+name: lookilooki_example
+channels:
+  - defaults
+  - pytorch
+  - fastai
+  - pysftp
+dependencies:
+  - python=3.6
+  - pytorch
+  - torchvision
+  - fastai
+  - pip:
+    - mlflow>=1.0

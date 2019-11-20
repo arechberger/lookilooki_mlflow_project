@@ -1,0 +1,26 @@
+name: lookilooki
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      batch-size: {type: int, default: 20}
+      epochs: {type: int, default: 10}
+      lr: {type: float, default: 0.001}
+      momentum: {type: float, default: 0.9}
+      enable-cuda: {type: string, default: 'True'}
+      experiment_name: {type: string, default: "mlflow_demo1"}
+      tracking_uri: {type: string, default: "http://lookilooki.root.sx:8000"}
+      run_name: {type: string, "first_try"}
+
+    command: |
+          python train.py \
+            --batch_ {batch-size} \
+            --epochs {epochs} \
+            --lr {lr} \
+            --momentum {momentum} \
+            --enable-cuda {enable-cuda} \
+            --experiment_name {experiment_name} \
+            --tracking_uri {tracking_uri} \
+            --run_name {run_name}
