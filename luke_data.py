@@ -5,7 +5,7 @@ import math
 import numpy as np
 
 def get_data():
-    traindata = pickle.load(bz2.BZ2File('../data/train.pickle.bz2','r'))
+    traindata = pickle.load(bz2.BZ2File('data/train.pickle.bz2','r'))
     random.seed(12034123)
     random.shuffle(traindata)
     validation_data = traindata[:math.floor(len(traindata)*0.1)]

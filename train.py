@@ -7,7 +7,7 @@ from callbacks import AvgStatsMlFlowCallback
 
 # Command-line arguments
 parser = argparse.ArgumentParser(description='model_lookilooki Example')
-parser.add_argument('--batch-size', type=int, default=20, metavar='N',
+parser.add_argument('--batch_size', type=int, default=20, metavar='N',
                     help='input batch size for training (default: 20)')
 parser.add_argument('--epochs', type=int, default=10, metavar='N',
                     help='number of epochs to train (default: 10)')

@@ -16,7 +16,7 @@ entry_points:
 
     command: |
           python train.py \
-            --batch_ {batch-size} \
+            --batch_size {batch-size} \
             --epochs {epochs} \
             --lr {lr} \
             --momentum {momentum} \
