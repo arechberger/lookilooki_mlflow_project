@@ -4,7 +4,6 @@ channels:
   - defaults
   - pytorch
   - fastai
-  - pysftp
 dependencies:
   - python=3.6
   - pytorch
@@ -12,3 +11,4 @@ dependencies:
   - fastai
   - pip:
     - mlflow>=1.0
+    - pysftp
