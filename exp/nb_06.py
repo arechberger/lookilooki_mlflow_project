@@ -122,7 +122,6 @@ def get_learn_run(nfs, data, lr, layer, cbs=None, opt_func=None, uniform=False, 
     init_cnn(model, uniform=uniform)
     return get_runner(model, data, lr=lr, cbs=cbs, opt_func=opt_func)
 
-from IPython.display import display, Javascript
 def nb_auto_export():
     display(Javascript("""{
 const ip = IPython.notebook
